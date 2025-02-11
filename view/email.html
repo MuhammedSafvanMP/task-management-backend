@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            color: #333333;
+        }
+        .content p {
+            color: #555555;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #777777;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Task Management</h1>
+        </div>
+        <div class="content">
+            <h2>Hello {{from}},</h2>
+            <p>{{text}}</p>
+            <p>If you have any questions, feel free to reach out to us.</p>
+        </div>
+        <div class="footer">
+            <p>Thank you for choosing us!</p>
+            <p>For further assistance, contact us at <a href="mailto:yourcompanyemail@example.com">yourcompanyemail@example.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
